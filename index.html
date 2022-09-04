@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Open Sans";
+            color: #000;
+        }
+        
+        section {
+            background: url('https://static-cse.canva.com/blob/572643/2.Freephotos.jpg');
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        .form-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: white;
+            transform: translate(-50%, -50%);
+            width: 380px;
+            padding: 50px 30px;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            color: #000;
+            font-size: 2em;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .control input {
+            padding: 10px;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            color: #000;
+            background: #ddd;
+            outline: none;
+            border: none;
+            margin: 1em 0;
+        }
+        
+        .control .btn {
+            color: #000;
+            text-transform: uppercase;
+            background: crimson;
+            opacity: .7;
+            transition: opacity .3s ease;
+        }
+        
+        .btn:focus {
+            opacity: 1;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000;
+            opacity: .7;
+        }
+        
+        a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+
+        <div class="form-container">
+            <h1>Login</h1>
+            <form action="login.php" method="post">
+
+                <div class="control">
+                    <label for="name"><b>Username</b></label>
+                    <input type="text" name="uname" placeholder="Enter your Username">
+                </div>
+                <div class="control">
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" name="password" placeholder="Enter your Password">
+                </div>
+                <hr>
+                <center>
+                    <button class="btn btn-danger" type="button" onclick="history.back()">Back</button>
+                    <input type="submit" class="btn btn-success" value="Login">
+                    <div class="control"><br>Not a member?
+                        <a href="signup.html" class="ca">Sign Up</a><br>
+                </center>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+</body>
+
+</html>
